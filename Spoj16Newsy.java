@@ -6,27 +6,26 @@ public class Spoj16Newsy {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        int test_num = input.nextInt();
+        Scanner inputSc = new Scanner(System.in);
+        int testNum = inputSc.nextInt();
+        inputSc.nextLine();
 
-        for (int i = 0; i < test_num; ++i) {
-            Scanner input2 = new Scanner(System.in);
-            String[] dataset = input2.nextLine().split("\\s+");
+        for (int i = 0; i < testNum; ++i) {
+            String[] dataset = inputSc.nextLine().split("\\s+");
 
-            int num_messages = Integer.parseInt(dataset[1]);
-            String num_of_source = dataset[2];
-            List<String> ordered_chain_members = new ArrayList<>(Collections.singletonList(num_of_source));
-            Set<String> chain_members = Collections.singleton(num_of_source);
+            int numMessages = Integer.parseInt(dataset[1]);
+            String numOfSource = dataset[2];
+            List<String> orderedChainMembers = new ArrayList<>(Collections.singletonList(numOfSource));
+            Set<String> chainMembers = new HashSet<>(Collections.singleton(numOfSource));
 
-            for (int j = 0; j < num_messages; ++j) {
-                Scanner input3 = new Scanner(System.in);
-                String[] message = input3.nextLine().split("\\s+");
-                if (chain_members.contains(message[0]) && chain_members.contains(message[1])) {
-                    ordered_chain_members.add(message[1]);
-                    chain_members.add(message[1]);
+            for (int j = 0; j < numMessages; ++j) {
+                String[] message = inputSc.nextLine().split("\\s+");
+                if (chainMembers.contains(message[0]) && chainMembers.contains(message[1])) {
+                    orderedChainMembers.add(message[1]);
+                    chainMembers.add(message[1]);
                 }
             }
-            for (String member : ordered_chain_members) {
+            for (String member : orderedChainMembers) {
                 System.out.println(member);
             }
         }

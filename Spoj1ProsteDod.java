@@ -5,18 +5,18 @@ public class Spoj1ProsteDod {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        int t = input.nextInt();
+        Scanner inputSc = new Scanner(System.in);
+        int t = inputSc.nextInt();
+        inputSc.nextLine();
 
         for (int i = 0; i < t; ++i) {
             int total = 0;
-            Scanner input2 = new Scanner(System.in);
-            int n = input2.nextInt();
-            Scanner input3 = new Scanner(System.in);
-            String numbers = input3.nextLine();
-            String[] split_numbers = numbers.split("\\s+");
+            int n = inputSc.nextInt();
+            inputSc.nextLine();
+            String numbers = inputSc.nextLine();
+            String[] splitNumbers = numbers.split("\\s+");
 
-            for (String number : split_numbers) {
+            for (String number : splitNumbers) {
                 total += Integer.parseInt(number);
             }
             System.out.println(total);

@@ -1,5 +1,4 @@
 package com.company;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -10,11 +9,11 @@ public class Spoj3Calc {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        File input_file = new File("/home/marek-stoppel/it/git/python_projects/calc");
-        Scanner input = new Scanner(input_file);
+        File inputFile = new File("/home/marek-stoppel/it/git/python_projects/calc");
+        Scanner inputSc = new Scanner(inputFile);
         ArrayList<String> text = new ArrayList<>();
-        while (input.hasNextLine()) {
-            text.add(input.nextLine());
+        while (inputSc.hasNextLine()) {
+            text.add(inputSc.nextLine());
         }
         System.out.println(text);
 

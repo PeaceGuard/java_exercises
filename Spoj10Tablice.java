@@ -1,5 +1,4 @@
 package com.company;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -9,17 +8,16 @@ public class Spoj10Tablice {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        int t = input.nextInt();
-        input.nextLine();  // Consume newline left-over
+        Scanner inputSc = new Scanner(System.in);
+        int t = inputSc.nextInt();
+        inputSc.nextLine();
         for (int i = 0; i < t; ++i) {
-            String[] s = input.nextLine().split("\\s+");
-            ArrayList<String> digits_list = new ArrayList<>(Arrays.asList(s));
+            String[] s = inputSc.nextLine().split("\\s+");
+            ArrayList<String> digitsList = new ArrayList<>(Arrays.asList(s));
             //digits_list = ArrayUtils.remove(digits_list, index);
-            digits_list.remove(0);
-            Collections.reverse(digits_list);
-            System.out.println(String.join(" ", digits_list));
-
+            digitsList.remove(0);
+            Collections.reverse(digitsList);
+            System.out.println(String.join(" ", digitsList));
             /*for (String digit : digits_list) {
                 System.out.print(digit);
             }*/

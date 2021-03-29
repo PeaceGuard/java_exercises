@@ -4,18 +4,18 @@ import java.util.Scanner;
 public class Spoj04Pesel {
 
     public static void main(String[] args) {
-        Scanner input_scanner = new Scanner(System.in);
-        int test_num = input_scanner.nextInt();
+        Scanner inputSc = new Scanner(System.in);
+        int testNum = inputSc.nextInt();
 
         StringBuilder result = new StringBuilder();
 
-        for (int i = 0; i < test_num; ++i) {
+        for (int i = 0; i < testNum; ++i) {
 
-            String pesel = input_scanner.next();
+            String pesel = inputSc.nextLine();
             int total = 0;
-            final int[] pesel_coefficients = {1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1};
+            final int[] peselCoefficients = {1, 3, 7, 9, 1, 3, 7, 9, 1, 3, 1};
             for (int j = 0; j <= 10; ++j) {
-                total += (pesel.charAt(j) - '0') * pesel_coefficients[j];
+                total += (pesel.charAt(j) - '0') * peselCoefficients[j];
                 /*String pesel_coefficients = "13791379131";
                 total += (pesel.charAt(j) - '0') * (pesel_digits.charAt(j) - '0');*/
             }

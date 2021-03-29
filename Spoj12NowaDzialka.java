@@ -1,5 +1,4 @@
 package com.company;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -8,21 +7,21 @@ public class Spoj12NowaDzialka {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        int test_num = input.nextInt();
+        Scanner inputSc = new Scanner(System.in);
+        int testNum = inputSc.nextInt();
+        inputSc.nextLine();
 
-        List<Integer> area_list = new ArrayList<>();
+        List<Integer> areaList = new ArrayList<>();
 
-        for (int i = 0; i < test_num; ++i) {
+        for (int i = 0; i < testNum; ++i) {
 
-            Scanner input2 = new Scanner(System.in);
-            int side_length = input2.nextInt();
-            int area = side_length * side_length;
-            area_list.add(area);
+            int sideLength = inputSc.nextInt();
+            int area = sideLength * sideLength;
+            areaList.add(area);
         }
 
-        for (int element : area_list) {
-            System.out.println(element);
+        for (int area : areaList) {
+            System.out.println(area);
         }
     }
 }

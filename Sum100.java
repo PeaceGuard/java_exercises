@@ -24,6 +24,3 @@ public class Sum100 {
         System.out.println("Sum/range: The sum of first 100 natural numbers is " + tota + ".");
     }
 }
-
-// toString() not working
-// int small/large

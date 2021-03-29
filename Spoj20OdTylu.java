@@ -6,11 +6,11 @@ import java.util.Scanner;
 public class Spoj20OdTylu {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        String numbers = input.nextLine();
-        String[] split_numbers = numbers.split("\\s+");
-        Collections.reverse(Arrays.asList(split_numbers));
+        Scanner inputSc = new Scanner(System.in);
+        String numbers = inputSc.nextLine();
+        String[] splitNumbers = numbers.split("\\s+");
+        Collections.reverse(Arrays.asList(splitNumbers));
         //System.out.println(Arrays.toString(split_numbers));
-        System.out.println(String.join(" ", split_numbers));
+        System.out.println(String.join(" ", splitNumbers));
     }
 }

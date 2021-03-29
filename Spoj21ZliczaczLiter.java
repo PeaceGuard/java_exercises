@@ -5,40 +5,39 @@ public class Spoj21ZliczaczLiter {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        int test_num = input.nextInt();
+        Scanner inputSc = new Scanner(System.in);
+        int testNum = inputSc.nextInt();
+        inputSc.nextLine();
 
-        Set<Character> upper_letters = new HashSet<>();
-        Set<Character> lower_letters = new HashSet<>();
-        String all_text_lines = "";
-        List<Character> sorted_letters = new ArrayList<>();
+        Set<Character> upperLetters = new HashSet<>();
+        Set<Character> lowerLetters = new HashSet<>();
+        String allTextLines = "";
+        List<Character> sortedLetters = new ArrayList<>();
 
-        for (int i = 0; i < test_num; ++i) {
-
-            Scanner input2 = new Scanner(System.in);
-            String text_line = input2.nextLine().replace(" ", "");
-            for (int j = 0; j < text_line.length() ; ++j) {
-                if (Character.isUpperCase(text_line.charAt(j))) {
-                    upper_letters.add(text_line.charAt(j));
+        for (int i = 0; i < testNum; ++i) {
+            
+            String textLine = inputSc.nextLine().replace(" ", "");
+            for (int j = 0; j < textLine.length() ; ++j) {
+                if (Character.isUpperCase(textLine.charAt(j))) {
+                    upperLetters.add(textLine.charAt(j));
                 }
-                if (Character.isLowerCase(text_line.charAt(j))) {
-                    lower_letters.add(text_line.charAt(j));
+                if (Character.isLowerCase(textLine.charAt(j))) {
+                    lowerLetters.add(textLine.charAt(j));
                 }
             }
-            List<Character> lower_letters_list = new ArrayList<>(lower_letters);
-            Collections.sort(lower_letters_list);
-            List<Character> upper_letters_list = new ArrayList<>(upper_letters);
-            Collections.sort(lower_letters_list);
-            sorted_letters = new ArrayList<>(lower_letters_list);
-            sorted_letters.addAll(upper_letters_list);
-            all_text_lines += text_line;
+            List<Character> lowerLettersList = new ArrayList<>(lowerLetters);
+            Collections.sort(lowerLettersList);
+            List<Character> upperLettersList = new ArrayList<>(upperLetters);
+            Collections.sort(lowerLettersList);
+            sortedLetters = new ArrayList<>(lowerLettersList);
+            sortedLetters.addAll(upperLettersList);
+            allTextLines += textLine;
         }
-
-        for (Character letter : sorted_letters) {
+        for (Character letter : sortedLetters) {
             /*int letter_count3 = all_text_lines.length() - all_text_lines.replace(letter, "").length(); - crashes*/
             /*int letter_count2 = all_text_lines.replaceAll(String.valueOf(letter), "").length(); - gives wrong result*/
-            int letter_count = all_text_lines.split(String.valueOf(letter),-1).length-1;
-            System.out.println(letter + " " + letter_count);
+            int letterCount = allTextLines.split(String.valueOf(letter),-1).length-1;
+            System.out.println(letter + " " + letterCount);
         }
     }
 }

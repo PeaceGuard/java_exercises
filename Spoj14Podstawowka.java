@@ -5,18 +5,18 @@ public class Spoj14Podstawowka {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        int student_num = input.nextInt();
+        Scanner inputSc = new Scanner(System.in);
+        int studentNum = inputSc.nextInt();
+        inputSc.nextLine();
 
-        float average_sum = 0;
+        float averageSum = 0;
 
-        for (int i = 0; i < student_num; ++i) {
-            Scanner input2 = new Scanner(System.in);
-            String[] student_list = input2.nextLine().split("\\s+");
-            average_sum += Float.parseFloat(student_list[2]);
+        for (int i = 0; i < studentNum; ++i) {
+            String[] studentList = inputSc.nextLine().split("\\s+");
+            averageSum += Float.parseFloat(studentList[2]);
         }
 
-        float average = average_sum / student_num;
+        float average = averageSum / studentNum;
 
         System.out.printf("%.2f", average);
     }

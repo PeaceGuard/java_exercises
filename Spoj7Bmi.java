@@ -1,5 +1,4 @@
 package com.company;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -8,47 +7,47 @@ public class Spoj7Bmi {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        int test_num = input.nextInt();
+        Scanner inputSc = new Scanner(System.in);
+        int testNum = inputSc.nextInt();
+        inputSc.nextLine();
 
-        List<String> underweight_list = new ArrayList<>();
-        List<String> correctweight_list = new ArrayList<>();
-        List<String> overweight_list = new ArrayList<>();
+        List<String> underweightList = new ArrayList<>();
+        List<String> correctweightList = new ArrayList<>();
+        List<String> overweightList = new ArrayList<>();
 
-        for (int i = 0; i < test_num; ++i) {
+        for (int i = 0; i < testNum; ++i) {
 
-            Scanner input2 = new Scanner(System.in);
-            String[] person = input2.nextLine().split("\\s+");
+            String[] person = inputSc.nextLine().split("\\s+");
 
-            String person_name = person[0];
-            float person_weight = Integer.parseInt(person[1]); // NumberFormatException
-            float person_height = Float.parseFloat(person[2]) / 100;
-            float bmi = person_weight / (person_height * person_height);
+            String personName = person[0];
+            float personWeight = Integer.parseInt(person[1]);
+            float personHeight = Float.parseFloat(person[2]) / 100;
+            float bmi = personWeight / (personHeight * personHeight);
             if (bmi< 18.5) {
-                underweight_list.add(person_name);
+                underweightList.add(personName);
             }
             else if (bmi >=18.5 && bmi <25){
-                correctweight_list.add(person_name);
+                correctweightList.add(personName);
             }
             else if (bmi >= 25) {
-                overweight_list.add(person_name);
+                overweightList.add(personName);
             }
         }
 
         System.out.println("niedowaga");
-        for (String name : underweight_list) {
+        for (String name : underweightList) {
             System.out.println(name);
         }
         System.out.println();
 
         System.out.println("wartosc prawidlowa");
-        for (String name : correctweight_list) {
+        for (String name : correctweightList) {
             System.out.println(name);
         }
         System.out.println();
 
         System.out.println("nadwaga");
-        for (String name : overweight_list) {
+        for (String name : overweightList) {
             System.out.println(name);
         }
     }

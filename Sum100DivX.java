@@ -8,13 +8,13 @@ public class Sum100DivX {
         return a;
     }
     public static Scanner bar() {
-        Scanner input = new Scanner(System.in);
-        return input;
+        Scanner inputSc = new Scanner(System.in);
+        return inputSc;
     }
     public static void main(String[] args) {
 
-        Scanner input = bar();
-        int divisor = input.nextInt(); // exception handling - throw, try/catch?
+        Scanner inputSc = bar();
+        int divisor = inputSc.nextInt(); // exception handling - throw, try/catch?
 
         int tot = 0;
         int increm = divisor;

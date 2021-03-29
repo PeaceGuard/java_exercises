@@ -5,20 +5,20 @@ public class Spoj2Polowa {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        int t = input.nextInt();
+        Scanner inputSc = new Scanner(System.in);
+        int t = inputSc.nextInt();
+        inputSc.nextLine();
 
         for (int i = 0; i < t; ++i) {
-            Scanner input2 = new Scanner(System.in);
-            String[] words = input2.nextLine().split("\\s+");
+            String[] words = inputSc.nextLine().split("\\s+");
 
             for (String word : words) {
-                String half_word = "";
-                int half_length = word.length() / 2;
-                for (int letter = 0; letter < half_length; ++letter) {
-                    half_word += word.charAt(letter);
+                String halfWord = "";
+                int halfLength = word.length() / 2;
+                for (int letter = 0; letter < halfLength; ++letter) {
+                    halfWord += word.charAt(letter);
                 }
-                System.out.println(half_word);
+                System.out.println(halfWord);
             }
         }
     }
