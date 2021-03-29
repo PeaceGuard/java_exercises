@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Scanner;
 
-public class Sum_100_divx {
+public class Sum100DivX {
 
     public static int foo(String[] args) {
         int a = 0;

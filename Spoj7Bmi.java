@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Spoj7_bmi {
+public class Spoj7Bmi {
 
     public static void main(String[] args) {
 

@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Scanner;
 
-public class Spoj2_polowa {
+public class Spoj2Polowa {
 
     public static void main(String[] args) {
 

@@ -1,7 +1,7 @@
 package com.company;
 import java.util.*;
 
-public class Spoj21_zliczacz_liter {
+public class Spoj21ZliczaczLiter {
 
     public static void main(String[] args) {
 

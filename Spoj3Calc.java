@@ -6,8 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
-public class Spoj3_calc {
+public class Spoj3Calc {
 
     public static void main(String[] args) throws FileNotFoundException {
 

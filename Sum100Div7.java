@@ -1,6 +1,6 @@
 package com.company;
 
-public class Sum_100_div7 {
+public class Sum100Div7 {
 
     public static void main(String[] args) {
         int tot = 0;

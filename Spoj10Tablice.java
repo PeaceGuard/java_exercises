@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Spoj10_tablice {
+public class Spoj10Tablice {
 
     public static void main(String[] args) {
 

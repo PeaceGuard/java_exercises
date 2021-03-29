@@ -2,7 +2,7 @@ package com.company;
 import java.util.*;
 import java.util.Scanner;
 
-public class Spoj16_newsy {
+public class Spoj16Newsy {
 
     public static void main(String[] args) {
 

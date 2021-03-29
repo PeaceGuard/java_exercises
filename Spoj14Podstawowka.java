@@ -1,8 +1,7 @@
 package com.company;
-
 import java.util.Scanner;
 
-public class Spoj14_podstawowka {
+public class Spoj14Podstawowka {
 
     public static void main(String[] args) {
 

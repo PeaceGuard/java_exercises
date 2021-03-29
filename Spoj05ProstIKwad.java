@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Scanner;
 
-public class Spoj05_prostikwad {
+public class Spoj05ProstIKwad {
 
     public static void main(String[] args) {
 

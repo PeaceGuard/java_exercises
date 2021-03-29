@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Spoj20_od_tylu {
+public class Spoj20OdTylu {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

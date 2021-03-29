@@ -1,7 +1,7 @@
 package com.company;
 import java.util.stream.IntStream;
 
-public class Sum_100 {
+public class Sum100 {
 
     public static void main(String[] args) {
         int tot = 0;

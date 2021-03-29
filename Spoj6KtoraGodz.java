@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Scanner;
 
-public class Spoj6_ktora_godz {
+public class Spoj6KtoraGodz {
 
     public static void main(String[] args) {
 

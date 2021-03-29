@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Scanner;
 
-public class Spoj1_proste_dod {
+public class Spoj1ProsteDod {
 
     public static void main(String[] args) {
 

@@ -1,7 +1,7 @@
 package com.company;
 import java.util.Scanner;
 
-public class Spoj04_pesel {
+public class Spoj04Pesel {
 
     public static void main(String[] args) {
         Scanner input_scanner = new Scanner(System.in);

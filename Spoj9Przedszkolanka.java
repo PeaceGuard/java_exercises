@@ -1,8 +1,7 @@
 package com.company;
-
 import java.util.Scanner;
 
-public class Spoj9_przedszkolanka {
+public class Spoj9Przedszkolanka {
 
     public static void main(String[] args) {
 
